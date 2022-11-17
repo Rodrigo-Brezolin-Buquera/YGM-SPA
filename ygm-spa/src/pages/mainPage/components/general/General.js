@@ -1,0 +1,4 @@
+
+export const General = () => {
+    return <></>
+}
