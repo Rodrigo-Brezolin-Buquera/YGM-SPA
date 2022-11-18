@@ -14,10 +14,10 @@ const MainPage = () => {
             <Header/>
             <General/>
             <YogaStyles/>
-            <PhysicalSpace/>
             <Agenda/>
             <Values/>
             <Teachers/>
+            <PhysicalSpace/>
             <Footer/>
        
         </MainContainer>)
