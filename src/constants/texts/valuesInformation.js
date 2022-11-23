@@ -11,4 +11,8 @@ export const Semester2x = "R$180,00"
 export const gympassPlan = "Prata" 
 export const gympassLimit = 2
 
+export const personalValue = "R$120,00"
+export const personalPackValue = "R$100,00"
+
+
 
