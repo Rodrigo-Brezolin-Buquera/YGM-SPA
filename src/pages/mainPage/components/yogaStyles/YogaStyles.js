@@ -13,10 +13,6 @@ export const YogaStyles = () => {
         />)
 
     return <YogaStylesContainer>
-
         {StyleCardList}
-
-
-
     </YogaStylesContainer>
 }
