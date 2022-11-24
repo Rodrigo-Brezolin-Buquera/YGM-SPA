@@ -22,7 +22,7 @@ export const wednesdayClasses = [
 export const thursdayClasses = [
     {
         style: "hatha",
-        time: "8:00"
+        time: "7:00"
     }
 ]
 export const fridayClasses = []
