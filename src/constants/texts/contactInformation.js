@@ -1,4 +1,10 @@
-export const address = "Rua Luiz Silva Rodrigues, 299 Vila Independência - Sorocaba/SP "
+export const location = {
+    address: "Rua Luiz Silva Rodrigues, 299 Vila Independência - Sorocaba/SP ",
+    lat: "-23.508065088778704",
+    lng: "-47.47277163446736"
+}
+
+
 
 export const email = "contato@yogamangala.com.br"
 

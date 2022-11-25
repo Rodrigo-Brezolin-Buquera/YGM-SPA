@@ -7,7 +7,7 @@ export const DayCard = ({ day, classes }) => {
     return (
         <Column>
            <CardContainer><Text fontSize="3xl">{day}</Text></CardContainer>
-            {classes?.map((i) => <ClassCard yogaClass={i} />)}
+            {classes?.map((i) => <ClassCard key={i.time} yogaClass={i} />)}
         </Column>
     )
 }
