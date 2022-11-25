@@ -7,17 +7,31 @@ import { location } from "../../../../constants/texts/contactInformation"
 import MapIcon from "../../../../assets/icons/MapIcon.png"
 
 export const PhysicalSpace = () => {
-    return <Box display={"flex"}  alignItems={"center"} justifyContent="space-between" w={"100%"}>
-       <Image src={MapIcon}/>
-        <Text> {location.address} </Text>
-       
-        <Box display={"flex"} flexWrap="wrap" gap={"1em"} justifyContent={"center"} padding="1em" w={"60%"} >
-            <Image borderRadius="20px" boxShadow='base' w="35%" src={Studio1} />
-            <Image borderRadius="20px" boxShadow='base' w="35%" src={Studio2} />
-            <Image borderRadius="20px" boxShadow='base' w="35%"  src={Studio3} />
-            <Image borderRadius="20px" boxShadow='base' w="35%" src={Studio4} />
+    return (
+        <Box
+            display={"flex"}
+            flexDirection="column"
+            alignItems={"center"}
+            justifyContent="space-between"
+            w={"100%"}
+            paddingTop="1em"
+        >
+            <Box
+                display={"flex"}
+                flexWrap="wrap"
+                gap={"1em"}
+                justifyContent={"center"}
+                w={"100%"}
+            >
+                <Image borderRadius="20px" boxShadow='base' w="23%" src={Studio1} />
+                <Image borderRadius="20px" boxShadow='base' w="23%" src={Studio2} />
+                <Image borderRadius="20px" boxShadow='base' w="23%" src={Studio3} />
+                <Image borderRadius="20px" boxShadow='base' w="23%" src={Studio4} />
+            </Box>
+            <Box display={"flex"} alignItems={"center"} justifyContent={"center"} >
+                <Image src={MapIcon} w="5em" />
+                <Text fontSize={"2xl"}> {location.address} </Text>
+            </Box>
         </Box>
-   
-    
-    </Box>
+    )
 }
