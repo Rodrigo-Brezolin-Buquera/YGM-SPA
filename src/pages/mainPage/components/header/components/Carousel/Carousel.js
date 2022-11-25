@@ -1,4 +1,4 @@
-import { Box, Image } from "@chakra-ui/react";
+import { Image } from "@chakra-ui/react";
 import { Carousel } from "react-responsive-carousel";
 
 
@@ -15,13 +15,10 @@ export default () => (
 
     {photoList.map(photo => (
       <div>
-        <Image 
-        
-        alt="Carrossel de fotos" src={photo} />
+        <Image
+          alt="Carrossel de fotos" src={photo} />
       </div>
     ))}
-
-
 
   </Carousel>
 );
