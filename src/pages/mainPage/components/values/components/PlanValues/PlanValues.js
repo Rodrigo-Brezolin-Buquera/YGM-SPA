@@ -13,29 +13,38 @@ import {
 import { Monthy1x, Monthy2x, Quarterly1x, Quarterly2x, Semester1x, Semester2x } from '../../../../../../constants/texts/valuesInformation'
 
 export const PlanValues = () => {
-    return <TableContainer minWidth="600px" display={"flex"} flexDirection={"column"} alignItems={"center"} gap="1em">
+    return <TableContainer
+     minWidth="80%" 
+    display={"flex"} 
+    flexDirection={"column"}
+    alignItems={"center"} 
+    gap="1em"
+    fontSize={"1xl"}
+    
+    >
         <Heading fontSize={"3xl"}>Valores planos</Heading>
-        <Table variant='simple' colorScheme='teal'>
-            <Thead>
+        <Table variant='simple' >
+            <Thead
+            >
                 <Tr backgroundColor={"teal.100"}>
-                    <Th>Planos</Th>
-                    <Th>Mensal</Th>
-                    <Th>Trimestral</Th>
-                    <Th>Semestral</Th>
+                    <Th textAlign="center" fontSize={"1xl"}>Planos</Th>
+                    <Th textAlign="center" fontSize={"1xl"} >Mensal</Th>
+                    <Th textAlign="center" fontSize={"1xl"} >Trimestral</Th>
+                    <Th textAlign="center" fontSize={"1xl"}  >Semestral</Th>
                 </Tr>
             </Thead>
             <Tbody>
                 <Tr>
-                    <Td>1x na semana</Td>
-                    <Td>{Monthy1x}</Td>
-                    <Td>{Quarterly1x}</Td>
-                    <Td>{Semester1x}</Td>
+                    <Td textAlign="center" fontSize={"1xl"} >1x na semana</Td>
+                    <Td textAlign="center" >{Monthy1x}</Td>
+                    <Td textAlign="center" >{Quarterly1x}</Td>
+                    <Td textAlign="center" >{Semester1x}</Td>
                 </Tr>
                 <Tr>
-                    <Td>2x na semana</Td>
-                    <Td>{Monthy2x}</Td>
-                    <Td>{Quarterly2x}</Td>
-                    <Td>{Semester2x}</Td>
+                    <Td textAlign="center" fontSize={"1xl"} >2x na semana</Td>
+                    <Td textAlign="center" >{Monthy2x}</Td>
+                    <Td textAlign="center" >{Quarterly2x}</Td>
+                    <Td textAlign="center" >{Semester2x}</Td>
                 </Tr>
             </Tbody>
         </Table>
