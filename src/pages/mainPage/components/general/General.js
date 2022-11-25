@@ -1,24 +1,25 @@
-import { Text, Heading } from '@chakra-ui/react'
+import { Text, Heading, Box } from '@chakra-ui/react'
+import { heading1, subtitle, text1 } from '../../../../constants/texts/generalInformation'
+import { InformationCard } from './components/InfomationCard'
 import { GeneralContainer } from './styled'
-
+import { AiFillHeart } from "react-icons/ai";
 
 export const General = () => {
     return <>
         <GeneralContainer>
             <Heading>Yoga Mangala</Heading>
-            <Text>
-                Espaço voltado para práticas de Yoga, Meditação e Autoconhecimento. Relaxe e desfrute da prática de yoga e seus benefícios em um ambiente acolhedor, restaurando seu equilíbrio, harmonia e renovando suas energias.
-            </Text>
-            <Text>
-                Equilíbrio Corpo & Mente: Yoga é uma prática, um estilo de vida que integra o corpo e mente, desenvolvendo a consciência corporal, equilibrando as emoções e estimulando o fortalecimento e flexibilidade do corpo.
-            </Text>
-            <Text>
-                Fortalece o corpo físico: Praticar yoga é relaxa, corrige a postura, dá energia, aumenta a flexibilidade, tonifica os músculos e ajuda a prevenir doenças.
-            </Text>
-            <Text>
-                Vida Saudável: Fazer yoga com regularidade combate a depressão, insônia e ansiedade.
-            </Text>
-
+            <Heading fontSize={"sm"}>
+               {subtitle}
+            </Heading>
+            <Box display={"flex"}>
+                <InformationCard
+                title={heading1}
+                text={text1}
+                Icon={<AiFillHeart size={"50px"}/>}
+                color={"tomato"}
+                />
+            </Box>
+        
         </GeneralContainer>
     </>
 }

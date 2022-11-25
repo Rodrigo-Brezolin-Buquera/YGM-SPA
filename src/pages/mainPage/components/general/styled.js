@@ -6,5 +6,6 @@ width:100%;
 height:50%;
 display: flex;
 flex-direction: column;
+align-items:center;
 gap: 2em;
 `
