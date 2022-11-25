@@ -13,9 +13,14 @@ export const PhysicalSpace = () => {
             flexDirection="column"
             alignItems={"center"}
             justifyContent="space-between"
-            w={"100%"}
-            paddingTop="1em"
+            w={"100%"} 
+            minH="30%"          
+            marginTop={"3em"}
+            marginBottom={"3em"}
+            gap="3em"
+
         >
+            <Text fontSize={"4xl"}> Conheça nosso espaço</Text>    
             <Box
                 display={"flex"}
                 flexWrap="wrap"
