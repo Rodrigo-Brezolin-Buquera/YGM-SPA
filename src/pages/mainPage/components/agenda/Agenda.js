@@ -1,8 +1,7 @@
 import { fridayClasses, mondayClasses, saturdayClasses, thursdayClasses, tuesdayClasses, wednesdayClasses } from "../../../../constants/texts/agendaInformation"
 import { DayCard } from "./components/DayCard/DayCard"
-import { AgendaContainer } from "./styled"
-import { Box } from "@chakra-ui/react"
-import Carousel1 from "../../../../assets/photos/Carousel1.png"
+import { Box, Text } from "@chakra-ui/react"
+import Background from "../../../../assets/photos/Background.png"
 
 export const Agenda = () => {
     return (
@@ -13,14 +12,17 @@ export const Agenda = () => {
             alignItems={"center"}
             gap="1em"
             paddingTop={"1em"}
-            bgImage={Carousel1} // trocar de foto e deixar opaca no canva
-            h="50em"
+            bgImage={Background} // nao esta responsiva
+            h="30em"
         >
+            <Text fontSize={"3xl"}> Quadro de Aulas </Text>
             <Box
                 display={"flex"}
-                justifyContent={"center"}
+                justifyContent={"space-evenly"}
                 alignItems={"center"}
                 gap="1em"
+                h={"70%"}
+                w={"100%"}
             >
                 <DayCard day={"Segunda"} classes={mondayClasses} />
                 <DayCard day={"Terça"} classes={tuesdayClasses} />
@@ -30,7 +32,16 @@ export const Agenda = () => {
                 <DayCard day={"Sábado"} classes={saturdayClasses} />
             </Box>
 
-            // faixa amarela: "agende aula experimental"
+            <Box
+            display={"flex"}
+            justifyContent={"center"}
+            alignItems={"center"}
+            flexGrow={"1"}
+            w={"100%"}    
+            backgroundColor={"yellow.300"}
+            >
+                <Text padding={"1em"} fontSize={"3xl"} > Agende uma aula experimental gratuita! </Text>
+            </Box>            
         </Box>
 
     )
