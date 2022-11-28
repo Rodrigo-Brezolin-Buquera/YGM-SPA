@@ -1,6 +1,6 @@
 import { stylesInfomation } from "../../../../constants/texts/stylesInformation"
 import { StyleCard } from "./components/styleCards/StyleCard"
-import { YogaStylesContainer } from "./styled"
+import { Box } from "@chakra-ui/react"
 
 export const YogaStyles = () => {
 
@@ -12,7 +12,16 @@ export const YogaStyles = () => {
             image={style.image}
         />)
 
-    return <YogaStylesContainer>
+    return (
+    <Box
+    w={"100%"}
+    display={"flex"}
+    flexWrap={"wrap"}
+    backgroundColor={"teal.400"}
+    justifyContent={"space-evenly"}
+    paddingBottom={"1em"}
+    >
         {StyleCardList}
-    </YogaStylesContainer>
+    </Box>
+    )
 }
