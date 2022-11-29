@@ -14,7 +14,7 @@ export const Footer = () => {
             flexDirection={[ "column","column","row" ]}
             alignItems={"center"}
             justifyContent="space-evenly"
-            paddingTop={"1em"}
+            paddingY={"1em"}
         >
 
             <Box

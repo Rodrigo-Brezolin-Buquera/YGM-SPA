@@ -1,14 +1,21 @@
 import { Box, Heading, Text } from "@chakra-ui/react"
-import { gympassLimit, gympassPlan } from "../../../../../../constants/texts/valuesInformation"
+import { gympassPlan } from "../../../../../../constants/texts/valuesInformation"
 
 export const Gympass = () => {
     return (
-        <Box display={"flex"} flexDirection="column" justifyContent={"center"} alignItems="center" gap={"1em"} >
-            
-            <Heading fontSize={"initial"} color={"brand.500"}>Aceitamos Gympass</Heading>
-            <Text color={"brand.500"}>  Plano {gympassPlan}  ou superior </Text>
-          
+        <Box
+            display={"flex"}
+            flexDirection="column"
+            justifyContent={"center"}
+            alignItems="center"
+            gap={"1em"}
+        >
+            <Heading fontSize={"initial"} textAlign="center" color={"brand.500"}>
+                Aceitamos Gympass
+            </Heading>
+            <Text color={"brand.500"} textAlign="center">
+                Plano {gympassPlan}  ou superior
+            </Text>
         </Box>
-       
     )
 }

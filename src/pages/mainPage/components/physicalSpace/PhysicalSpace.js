@@ -27,12 +27,12 @@ export const PhysicalSpace = () => {
                 justifyContent={"center"}
                 w={"100%"}
             >
-                <Image borderRadius="20px" boxShadow='base' w="23%" src={Studio1} />
-                <Image borderRadius="20px" boxShadow='base' w="23%" src={Studio2} />
-                <Image borderRadius="20px" boxShadow='base' w="23%" src={Studio3} />
-                <Image borderRadius="20px" boxShadow='base' w="23%" src={Studio4} />
+                <Image borderRadius="20px" boxShadow='base' w={["80%","45%","23%"]} src={Studio1} />
+                <Image borderRadius="20px" boxShadow='base' w={["80%","45%","23%"]} src={Studio2} />
+                <Image borderRadius="20px" boxShadow='base' w={["80%","45%","23%"]} src={Studio3} />
+                <Image borderRadius="20px" boxShadow='base' w={["80%","45%","23%"]} src={Studio4} />
             </Box>
-            <Box display={"flex"} alignItems={"center"} justifyContent={"center"} >
+            <Box display={"flex"} alignItems={"center"} justifyContent={"center"} margin="1em" >
                 <Image src={MapIcon} w="5em" marginRight={"1em"} />
                 <Text fontSize={"2xl"} textAlign={"center"} color={"brand.500"}> {location.address} </Text>
             </Box>

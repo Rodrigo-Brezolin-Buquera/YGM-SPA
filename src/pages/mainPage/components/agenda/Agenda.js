@@ -42,6 +42,7 @@ export const Agenda = () => {
                 flexGrow={"1"}
                 w={"100%"}
                 backgroundColor={"brand.300"}
+                paddingY={"1em"}
             >
                 <Heading
                     textAlign={"center"}
