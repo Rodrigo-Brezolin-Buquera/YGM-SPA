@@ -1,4 +1,4 @@
-import { Text, Image, Link, Box } from "@chakra-ui/react"
+import { Text, Image, Link, Box, Heading } from "@chakra-ui/react"
 import { email, facebook, instagram, whatsapp } from "../../../../constants/texts/contactInformation"
 import White from "../../../../assets/logo/white.png"
 import FacebookWhite from "../../../../assets/socialMedia/FacebookWhite.png"
@@ -13,7 +13,6 @@ export const Footer = () => {
             display="flex"
             alignItems={"center"}
             justifyContent="space-evenly"
-      
         >
 
             <Box
@@ -24,8 +23,9 @@ export const Footer = () => {
                 alignItems={"center"}
                 justifyContent="space-evenly"
             >
-                <Text color="white" fontSize="lg">Email: {email}</Text>
-                <Text color="white" fontSize="lg">Whatsapp:{whatsapp}</Text>
+                <Heading color="white" fontSize="xl"> Contato:</Heading>
+                <Heading color="white" fontSize="xl"> {email}</Heading>
+                <Heading color="white" fontSize="xl">{whatsapp}</Heading>
             </Box>
             <Box
                 h={"100%"}
@@ -34,10 +34,10 @@ export const Footer = () => {
                 alignItems={"center"}
                 justifyContent="center"
             >
-                <Link href={facebook}><Image src={FacebookWhite} boxSize="100px" alt="Facebook" /></Link>
-                <Link href={instagram}><Image src={InstagramWhite} boxSize="100px" alt="Instagram" /></Link>
+                <Link href={facebook}><Image src={FacebookWhite} boxSize="120px" alt="Facebook" /></Link>
+                <Link href={instagram}><Image src={InstagramWhite} boxSize="120px" alt="Instagram" /></Link>
             </Box>
-            <Image src={White} h='100px' w="200px" alt="Yoga Mangala Logo" />
+            <Image src={White} h='150px' w="300px" alt="Yoga Mangala Logo" />
         </Box>
     )
 }
