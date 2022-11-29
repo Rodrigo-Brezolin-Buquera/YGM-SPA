@@ -21,8 +21,7 @@ export const Agenda = () => {
                 alignItems={"center"}
                 gap="1em"
                 w={"90%"}
-                backgroundColor={"white"}
-                borderRadius={"25px"}
+               
                 padding={"2em"}
 
             >
