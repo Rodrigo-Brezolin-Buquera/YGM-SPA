@@ -17,7 +17,7 @@ export const YogaStyles = () => {
     w={"100%"}
     display={"flex"}
     flexWrap={"wrap"}
-    backgroundColor={"teal.400"}
+    backgroundColor={"brand.100"}
     justifyContent={"space-evenly"}
     paddingBottom={"1em"}
     >

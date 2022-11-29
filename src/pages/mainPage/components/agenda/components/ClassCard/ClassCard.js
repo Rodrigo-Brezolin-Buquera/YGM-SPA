@@ -11,7 +11,7 @@ export const ClassCard = ({yogaClass}) => {
            gap={"0.1em"}
            borderRadius={"25px"}
            width={"150px"}
-           backgroundColor={"teal.400"}
+           backgroundColor={"brand.200"}
            padding={"0.3em"}
         >
             <Text fontSize="3xl">{yogaClass.time}</Text>

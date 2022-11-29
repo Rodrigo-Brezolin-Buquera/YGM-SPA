@@ -21,7 +21,7 @@ export const DayCard = ({ day, classes }) => {
            gap={"0.1em"}
            borderRadius={"25px"}
            width={"150px"}
-           backgroundColor={"yellow.400"}
+           backgroundColor={"brand.300"}
            padding={"0.3em"}
            >
                <Text color={"white"} fontSize="3xl">{day}</Text>

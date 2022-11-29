@@ -9,7 +9,7 @@ export const Footer = () => {
         <Box
             w={"100%"}
             minH="15em"
-            backgroundColor={"yellow.400"}
+            backgroundColor={"brand.300"}
             display="flex"
             alignItems={"center"}
             justifyContent="space-evenly"

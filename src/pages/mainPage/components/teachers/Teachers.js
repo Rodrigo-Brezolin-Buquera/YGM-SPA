@@ -1,6 +1,6 @@
 import { teachersInformations } from "../../../../constants/texts/teachersInformation"
 import { TeacherCard } from "./components/teacherCard/TeacherCard"
-import { Text, Box } from '@chakra-ui/react'
+import { Text, Box, Heading } from '@chakra-ui/react'
 
 
 
@@ -12,12 +12,12 @@ export const Teachers = () => {
             w={"100%"}
             display={"flex"}
             flexDirection={"column"}
-            backgroundColor={"teal.400"}
+            backgroundColor={"brand.100"}
             gap={"2em"}
             padding={"2em"}
             alignItems={"center"}
         >
-            <Text fontSize={"4xl"} color="white"> Nossos professores </Text>
+            <Heading fontSize={"4xl"} color="brand.400"> Nossos professores </Heading>
             {teachersInformations.map(teacher => (
                 <TeacherCard
                     image={teacher.image}

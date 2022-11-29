@@ -7,10 +7,17 @@ import { Values } from "./components/values/Values"
 import { Teachers} from "./components/teachers/Teachers"
 import {Footer} from "./components/footer/Footer"
 import { MainContainer } from "./styled"
+import { Box } from "@chakra-ui/react"
 
 const MainPage = () => {
     return (
-        <MainContainer>
+        <Box
+        w={"100%"}
+        h={"100%"}
+        display={"flex"}
+        flexDirection={"column"}
+        backgroundColor={"Background.400"}
+        >
             <Header/>
             <General/>
             <YogaStyles/>
@@ -19,7 +26,7 @@ const MainPage = () => {
             <Teachers/>
             <PhysicalSpace/>
             <Footer/>
-        </MainContainer>)
+        </Box>)
 }
 
 export default MainPage

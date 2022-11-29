@@ -1,6 +1,6 @@
 import { fridayClasses, mondayClasses, saturdayClasses, thursdayClasses, tuesdayClasses, wednesdayClasses } from "../../../../constants/texts/agendaInformation"
 import { DayCard } from "./components/DayCard/DayCard"
-import { Box, Text } from "@chakra-ui/react"
+import { Box, Heading, Text } from "@chakra-ui/react"
 import Background from "../../../../assets/photos/Background.png"
 
 export const Agenda = () => {
@@ -15,7 +15,7 @@ export const Agenda = () => {
             bgImage={Background} // nao esta responsiva
             h="30em"
         >
-            <Text fontSize={"3xl"}> Quadro de Aulas </Text>
+            <Heading fontSize={"3xl"}> Quadro de Aulas </Heading>
             <Box
                 display={"flex"}
                 justifyContent={"space-evenly"}
@@ -38,9 +38,9 @@ export const Agenda = () => {
             alignItems={"center"}
             flexGrow={"1"}
             w={"100%"}    
-            backgroundColor={"yellow.300"}
+            backgroundColor={"brand.300"}
             >
-                <Text padding={"1em"} fontSize={"3xl"} > Agende uma aula experimental gratuita! </Text>
+                <Heading padding={"1em"} fontSize={"3xl"} > Agende uma aula experimental gratuita! </Heading>
             </Box>            
         </Box>
 

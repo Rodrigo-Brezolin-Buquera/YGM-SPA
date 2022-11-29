@@ -5,6 +5,16 @@ const theme = extendTheme({
     heading: `'Open Sans', sans-serif`,
     body: `'Raleway', sans-serif`,
   },
+  colors:{
+    brand: {
+        100: '#73C6CD',
+        200: '#62D4CE',
+        300: '#F3C046',
+        400: '#f2f3f7',
+        500: '#343140'
+    }  
+  }
 })
 
 export default theme
+

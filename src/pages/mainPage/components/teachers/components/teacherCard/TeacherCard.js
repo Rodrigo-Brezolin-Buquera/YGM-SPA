@@ -8,6 +8,7 @@ export const TeacherCard = ({image, description, name}) => {
     overflow='hidden'
     variant='outline'
     p={"1em"}
+    w={"100%"}
 
 >
     <Image
@@ -20,8 +21,8 @@ export const TeacherCard = ({image, description, name}) => {
     />
     <Stack>
         <CardBody>
-            <Heading color={"white"} size='md'>{name}</Heading>
-            <Text py='2' color={"white"}>
+            <Heading color={"brand.400"} size='md'>{name}</Heading>
+            <Text py='2' color={"brand.400"}>
                 {description}
             </Text>
         </CardBody>
