@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardBody, CardFooter, Image, Stack, Heading, Text } from '@chakra-ui/react'
+import { Card, CardBody, Image, Stack, Heading, Text } from '@chakra-ui/react'
 
 export const StyleCard = ({image, text, title}) => {
   return(
