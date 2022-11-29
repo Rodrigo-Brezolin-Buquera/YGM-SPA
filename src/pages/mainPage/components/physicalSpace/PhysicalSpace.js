@@ -18,9 +18,8 @@ export const PhysicalSpace = () => {
             marginTop={"3em"}
             marginBottom={"3em"}
             gap="3em"
-
         >
-            <Text fontSize={"4xl"}> Conheça nosso espaço</Text>    
+            <Text fontSize={"4xl"} textAlign={"center"} color={"brand.500"} > Conheça nosso espaço</Text>    
             <Box
                 display={"flex"}
                 flexWrap="wrap"
@@ -34,8 +33,8 @@ export const PhysicalSpace = () => {
                 <Image borderRadius="20px" boxShadow='base' w="23%" src={Studio4} />
             </Box>
             <Box display={"flex"} alignItems={"center"} justifyContent={"center"} >
-                <Image src={MapIcon} w="5em" />
-                <Text fontSize={"2xl"}> {location.address} </Text>
+                <Image src={MapIcon} w="5em" marginRight={"1em"} />
+                <Text fontSize={"2xl"} textAlign={"center"} color={"brand.500"}> {location.address} </Text>
             </Box>
         </Box>
     )
