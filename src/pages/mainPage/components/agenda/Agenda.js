@@ -1,6 +1,7 @@
 import { fridayClasses, mondayClasses, saturdayClasses, thursdayClasses, tuesdayClasses, wednesdayClasses } from "../../../../constants/texts/agendaInformation"
 import { DayCard } from "./components/DayCard/DayCard"
-import { Box, Heading, Text } from "@chakra-ui/react"
+import { Box, Heading, Image } from "@chakra-ui/react"
+import Whatsapp from "../../../../assets/socialMedia/Whatsapp.png"
 
 export const Agenda = () => {
     return (
@@ -23,7 +24,7 @@ export const Agenda = () => {
                 backgroundColor={"white"}
                 borderRadius={"25px"}
                 padding={"2em"}
-              
+
             >
                 <DayCard day={"Segunda"} classes={mondayClasses} />
                 <DayCard day={"Terça"} classes={tuesdayClasses} />
@@ -34,15 +35,27 @@ export const Agenda = () => {
             </Box>
 
             <Box
-            display={"flex"}
-            justifyContent={"center"}
-            alignItems={"center"}
-            flexGrow={"1"}
-            w={"100%"}    
-            backgroundColor={"brand.300"}
+                display={"flex"}
+                justifyContent={"center"}
+                alignItems={"center"}
+                flexGrow={"1"}
+                w={"100%"}
+                backgroundColor={"brand.300"}
             >
-                <Heading padding={"1em"} fontSize={"3xl"} color={"brand.500"} > Agende uma aula experimental gratuita! </Heading>
-            </Box>            
+                <Heading
+                    
+                    fontSize={"3xl"}
+                    color={"brand.500"}
+                > Agende uma aula experimental gratuita:
+                </Heading>
+                <Image src={Whatsapp} boxSize={"5em"} padding={"1em"} />
+                <Heading
+                    
+                    fontSize={"3xl"}
+                    color={"brand.500"}
+                >  (15) 98130-2549
+                </Heading>
+            </Box>
         </Box>
 
     )
