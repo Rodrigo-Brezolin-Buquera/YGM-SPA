@@ -21,9 +21,7 @@ export const Agenda = () => {
                 alignItems={"center"}
                 gap="1em"
                 w={"90%"}
-               
                 padding={"2em"}
-
             >
                 <DayCard day={"Segunda"} classes={mondayClasses} />
                 <DayCard day={"Terça"} classes={tuesdayClasses} />
@@ -42,14 +40,12 @@ export const Agenda = () => {
                 backgroundColor={"brand.300"}
             >
                 <Heading
-                    
                     fontSize={"3xl"}
                     color={"brand.500"}
                 > Agende uma aula experimental gratuita:
                 </Heading>
                 <Image src={Whatsapp} boxSize={"5em"} padding={"1em"} />
                 <Heading
-                    
                     fontSize={"3xl"}
                     color={"brand.500"}
                 >  (15) 98130-2549

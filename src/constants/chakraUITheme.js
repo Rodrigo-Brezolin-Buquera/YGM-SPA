@@ -2,7 +2,7 @@ import { extendTheme } from '@chakra-ui/react'
 
 const theme = extendTheme({
   fonts: {
-    heading: `'Open Sans', sans-serif`,
+    heading: `"Baloo 2", cursive;`,
     body: `'Raleway', sans-serif`,
   },
   colors:{
