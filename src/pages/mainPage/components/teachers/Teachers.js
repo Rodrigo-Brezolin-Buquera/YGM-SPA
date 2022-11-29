@@ -1,12 +1,8 @@
 import { teachersInformations } from "../../../../constants/texts/teachersInformation"
 import { TeacherCard } from "./components/teacherCard/TeacherCard"
-import { Text, Box, Heading } from '@chakra-ui/react'
-
-
+import { Box, Heading } from '@chakra-ui/react'
 
 export const Teachers = () => {
-
-
     return (
         <Box
             w={"100%"}
@@ -25,7 +21,6 @@ export const Teachers = () => {
                     description={teacher.description}
                 />
             ))}
-
         </Box>
     )
 }

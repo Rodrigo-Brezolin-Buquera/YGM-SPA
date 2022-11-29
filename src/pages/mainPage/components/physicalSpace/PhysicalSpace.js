@@ -15,8 +15,7 @@ export const PhysicalSpace = () => {
             justifyContent="space-between"
             w={"100%"} 
             minH="30%"          
-            marginTop={"3em"}
-            marginBottom={"3em"}
+            marginY={"3em"}
             gap="3em"
         >
             <Text fontSize={"4xl"} textAlign={"center"} color={"brand.500"} > Conheça nosso espaço</Text>    

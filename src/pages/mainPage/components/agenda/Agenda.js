@@ -20,12 +20,11 @@ export const Agenda = () => {
             <Heading fontSize={"3xl"} color={"brand.500"}> Quadro de Aulas </Heading>
             <Box
                 display={"flex"}
-                flexDirection={["column", "column", "row"]}
+                flexDirection={["column", "column", "column", "row"]}
                 justifyContent={"space-evenly"}
                 alignItems={"center"}
                 gap="1em"
                 w={"90%"}
-
                 padding={"2em"}
             >
                 <DayCard day={"Segunda"} classes={mondayClasses} />
@@ -64,7 +63,6 @@ export const Agenda = () => {
                     >  (15) 98130-2549
                     </Heading>
                 </ReactWhatsapp>
-
             </Box>
         </Box>
 
