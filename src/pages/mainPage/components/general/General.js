@@ -16,11 +16,15 @@ export const General = () => {
             alignItems="center"
             paddingTop={"2em"} gap="1em"
         >
-            <Heading margin={"1em"}  color={"brand.500"}>Yoga Mangala</Heading>
+            <Heading margin={"1em"} color={"brand.500"}>Yoga Mangala</Heading>
             <Text textAlign="center" color={"brand.500"} fontSize={"2xl"} padding="1em" margin={"1em"}>
                 {subtitle}
             </Text>
-            <Box display={"flex"} justifyContent="space-evenly" height="300px" margin={"1em"}>
+            <Box
+                display={"flex"}
+                justifyContent="space-evenly"
+                margin={"1em"}
+            >
                 <InformationCard
                     title={heading1}
                     text={text1}

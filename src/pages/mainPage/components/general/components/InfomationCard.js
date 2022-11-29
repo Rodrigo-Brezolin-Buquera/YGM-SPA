@@ -11,7 +11,7 @@ export const InformationCard = ({ title, text, Icon, color }) => {
             <Circle size='100px' bg={color} color="white">
                {Icon}            
             </Circle>
-            <Heading fontSize={"3xl"} color={"brand.500"} textAlign="center">{title}</Heading>
+            <Heading fontSize={["2xl","2xl","3xl"]} color={"brand.500"} textAlign="center">{title}</Heading>
             <Text textAlign="center" color={"brand.500"} >{text}</Text>
         </Box>
     )

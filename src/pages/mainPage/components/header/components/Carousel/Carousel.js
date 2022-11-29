@@ -16,7 +16,7 @@ export default () => (
     {photoList.map(photo => (
       <div>
         <Image
-          alt="Carrossel de fotos" src={photo} />
+           alt="Carrossel de fotos" src={photo} />
       </div>
     ))}
 
