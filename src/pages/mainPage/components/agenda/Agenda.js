@@ -7,20 +7,23 @@ export const Agenda = () => {
     return (
         <Box
             display={"flex"}
-            flexDirection="column"
+            flexDirection={"column"}
             justifyContent={"center"}
             alignItems={"center"}
             gap="1em"
             paddingTop={"1em"}
-            h="30em"
+            minHeight="30em"
+            
         >
             <Heading fontSize={"3xl"} color={"brand.500"}> Quadro de Aulas </Heading>
             <Box
                 display={"flex"}
+                flexDirection={[ "column","column","row" ]}
                 justifyContent={"space-evenly"}
                 alignItems={"center"}
                 gap="1em"
                 w={"90%"}
+               
                 padding={"2em"}
             >
                 <DayCard day={"Segunda"} classes={mondayClasses} />

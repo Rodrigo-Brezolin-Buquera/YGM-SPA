@@ -11,8 +11,10 @@ export const Footer = () => {
             minH="15em"
             backgroundColor={"brand.300"}
             display="flex"
+            flexDirection={[ "column","column","row" ]}
             alignItems={"center"}
             justifyContent="space-evenly"
+            paddingTop={"1em"}
         >
 
             <Box
