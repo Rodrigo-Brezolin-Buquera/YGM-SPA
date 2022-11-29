@@ -1,16 +1,16 @@
-import { Heading, Text,Box } from "@chakra-ui/react"
+import { Heading, Text, Box } from "@chakra-ui/react"
 import { personalPackValue, personalValue } from "../../../../../../constants/texts/valuesInformation"
 
 export const Personal = () => {
     return (
 
         <Box display={"flex"} flexDirection="column" justifyContent={"center"} alignItems="center" gap={"1em"} >
-            <Heading fontSize={"2xl"}> Personal </Heading>
-            <Text> Aulas particulares ou grupos fechados no estudio</Text>
-             <Text> Valor por aula: {personalValue} </Text>
-             <Text> Pacote com 4 aulas: {personalPackValue} cada aula </Text>
-          
+            <Heading fontSize={"2xl"} color={"brand.500"} > Personal </Heading>
+            <Text color={"brand.500"} > Aulas particulares ou grupos fechados no estudio</Text>
+            <Text color={"brand.500"} > Valor por aula: {personalValue} </Text>
+            <Text color={"brand.500"} > Pacote com 4 aulas: {personalPackValue} cada aula </Text>
+
         </Box>
-       
+
     )
 }
