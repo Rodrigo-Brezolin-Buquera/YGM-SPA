@@ -11,7 +11,7 @@ export const DayCard = ({ day, classes }) => {
         justifyContent={"flex-start"}
         alignItems={"flex-start"}
         gap={"2em"}
-        height={"15em"}
+        h={"100%"}
         >
            <Box
            display={"flex"}

@@ -15,17 +15,18 @@ export const Agenda = () => {
             gap="1em"
             paddingTop={"1em"}
             minHeight="30em"
-
+            h={["100em","100em", "30em"]}
         >
             <Heading fontSize={"3xl"} color={"brand.500"}> Quadro de Aulas </Heading>
             <Box
                 display={"flex"}
-                flexDirection={["column", "column", "column", "row"]}
+                flexDirection={["column", "column", "row"]}
                 justifyContent={"space-evenly"}
                 alignItems={"center"}
                 gap="1em"
                 w={"90%"}
                 padding={"2em"}
+                flexGrow={"2"}
             >
                 <DayCard day={"Segunda"} classes={mondayClasses} />
                 <DayCard day={"Terça"} classes={tuesdayClasses} />
