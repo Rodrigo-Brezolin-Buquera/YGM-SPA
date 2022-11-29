@@ -8,12 +8,19 @@ import { GiWeightLiftingUp } from "react-icons/gi";
 
 export const General = () => {
     return <>
-        <Box w={"100%"} h={"100%"} display="flex" flexDirection={"column"} alignItems="center" paddingTop={"2em"} gap="1em">
-            <Heading>Yoga Mangala</Heading>
-            <Text textAlign="center" fontSize={"xl"} padding="1em">
+        <Box
+            w={"100%"}
+            h={"100%"}
+            display="flex"
+            flexDirection={"column"}
+            alignItems="center"
+            paddingTop={"2em"} gap="1em"
+        >
+            <Heading margin={"1em"}  color={"brand.500"}>Yoga Mangala</Heading>
+            <Text textAlign="center" color={"brand.500"} fontSize={"2xl"} padding="1em" margin={"1em"}>
                 {subtitle}
             </Text>
-            <Box display={"flex"} justifyContent="space-evenly" height="300px">
+            <Box display={"flex"} justifyContent="space-evenly" height="300px" margin={"1em"}>
                 <InformationCard
                     title={heading1}
                     text={text1}

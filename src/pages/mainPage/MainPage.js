@@ -6,7 +6,6 @@ import {Agenda} from "./components/agenda/Agenda"
 import { Values } from "./components/values/Values"
 import { Teachers} from "./components/teachers/Teachers"
 import {Footer} from "./components/footer/Footer"
-import { MainContainer } from "./styled"
 import { Box } from "@chakra-ui/react"
 
 const MainPage = () => {
@@ -16,7 +15,7 @@ const MainPage = () => {
         h={"100%"}
         display={"flex"}
         flexDirection={"column"}
-        backgroundColor={"Background.400"}
+        backgroundColor={"brand.400"}
         >
             <Header/>
             <General/>

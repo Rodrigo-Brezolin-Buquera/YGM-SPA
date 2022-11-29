@@ -19,7 +19,8 @@ export const YogaStyles = () => {
     flexWrap={"wrap"}
     backgroundColor={"brand.100"}
     justifyContent={"space-evenly"}
-    paddingBottom={"1em"}
+    paddingTop={"2em"}
+    paddingBottom={"3em"}
     >
         {StyleCardList}
     </Box>
