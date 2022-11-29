@@ -3,6 +3,8 @@ import { email, facebook, instagram, whatsapp } from "../../../../constants/text
 import White from "../../../../assets/logo/white.png"
 import FacebookWhite from "../../../../assets/socialMedia/FacebookWhite.png"
 import InstagramWhite from "../../../../assets/socialMedia/InstagramWhite.png"
+import ReactWhatsapp from 'react-whatsapp';
+import { reactWhatapp, whatsappMessage } from "../../../../constants/texts/contactInformation";
 
 export const Footer = () => {
     return (
@@ -11,7 +13,7 @@ export const Footer = () => {
             minH="15em"
             backgroundColor={"brand.300"}
             display="flex"
-            flexDirection={[ "column","column","row" ]}
+            flexDirection={["column", "column", "row"]}
             alignItems={"center"}
             justifyContent="space-evenly"
             paddingY={"1em"}
@@ -27,7 +29,9 @@ export const Footer = () => {
             >
                 <Heading color="white" fontSize="xl"> Contato:</Heading>
                 <Heading color="white" fontSize="xl"> {email}</Heading>
-                <Heading color="white" fontSize="xl">{whatsapp}</Heading>
+                <ReactWhatsapp number={reactWhatapp} message={whatsappMessage}>
+                    <Heading color="white" fontSize="xl">{whatsapp}</Heading>
+                </ReactWhatsapp>
             </Box>
             <Box
                 h={"100%"}
