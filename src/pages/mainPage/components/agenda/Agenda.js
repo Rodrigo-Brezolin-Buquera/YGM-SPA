@@ -36,6 +36,7 @@ export const Agenda = () => {
 
             <Box
                 display={"flex"}
+                flexDirection={["column", "row"]}
                 justifyContent={"center"}
                 alignItems={"center"}
                 flexGrow={"1"}
@@ -43,6 +44,7 @@ export const Agenda = () => {
                 backgroundColor={"brand.300"}
             >
                 <Heading
+                    textAlign={"center"}
                     fontSize={"3xl"}
                     color={"brand.500"}
                 > Agende uma aula experimental gratuita:

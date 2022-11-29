@@ -1,6 +1,6 @@
 import { stylesInfomation } from "../../../../constants/texts/stylesInformation"
 import { StyleCard } from "./components/styleCards/StyleCard"
-import { Box } from "@chakra-ui/react"
+import { Box, Heading } from "@chakra-ui/react"
 
 export const YogaStyles = () => {
 
@@ -13,16 +13,26 @@ export const YogaStyles = () => {
         />)
 
     return (
-    <Box
-    w={"100%"}
-    display={"flex"}
-    flexWrap={"wrap"}
-    backgroundColor={"brand.100"}
-    justifyContent={"space-evenly"}
-    paddingTop={"2em"}
-    paddingBottom={"3em"}
-    >
-        {StyleCardList}
-    </Box>
+        <Box
+            w={"100%"}
+            display={"flex"}
+            flexDirection={"column"}
+            backgroundColor={"brand.100"}
+            justifyContent={"center"}
+            alignItems={"center"}
+            paddingTop={"2em"}
+            paddingBottom={"3em"}
+        >
+            <Heading color={"brand.500"} > Atividades</Heading>
+            <Box
+                w={"100%"}
+                display={"flex"}
+                flexWrap={"wrap"}
+                justifyContent={"space-evenly"}
+            >
+                {StyleCardList}
+            </Box>
+        </Box>
+
     )
 }
