@@ -1,6 +1,6 @@
 import { fridayClasses, mondayClasses, saturdayClasses, thursdayClasses, tuesdayClasses, wednesdayClasses } from "../../../../constants/texts/agendaInformation"
 import { DayCard } from "./components/DayCard/DayCard"
-import { Box, Heading, Image } from "@chakra-ui/react"
+import { Box, Heading, Image, Divider } from "@chakra-ui/react"
 import Whatsapp from "../../../../assets/socialMedia/Whatsapp.png"
 import ReactWhatsapp from 'react-whatsapp';
 import { reactWhatapp, whatsappMessage } from "../../../../constants/texts/contactInformation";
@@ -29,10 +29,15 @@ export const Agenda = () => {
                 flexGrow={"2"}
             >
                 <DayCard day={"Segunda"} classes={mondayClasses} />
+                <Divider orientation={"vertical"} borderColor={"brand.100"}/>
                 <DayCard day={"Terça"} classes={tuesdayClasses} />
+                <Divider orientation={"vertical"} borderColor={"brand.100"}/>
                 <DayCard day={"Quarta"} classes={wednesdayClasses} />
+                <Divider orientation={"vertical"} borderColor={"brand.100"}/>
                 <DayCard day={"Quinta"} classes={thursdayClasses} />
+                <Divider orientation={"vertical"} borderColor={"brand.100"}/>
                 <DayCard day={"Sexta"} classes={fridayClasses} />
+                <Divider orientation={"vertical"} borderColor={"brand.100"}/>
                 <DayCard day={"Sábado"} classes={saturdayClasses} />
             </Box>
 
