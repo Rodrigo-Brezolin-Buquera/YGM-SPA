@@ -18,7 +18,7 @@ export const PhysicalSpace = () => {
             marginY={"3em"}
             gap="3em"
         >
-            <Text fontSize={"4xl"} textAlign={"center"} color={"brand.500"} > Conheça nosso espaço</Text>    
+            <Text fontSize={"5xl"} textAlign={"center"} color={"brand.500"} > Conheça nosso espaço</Text>    
             <Box
                 display={"flex"}
                 flexWrap="wrap"

@@ -17,7 +17,7 @@ export const Agenda = () => {
             minHeight="30em"
             h={["100em","100em", "30em"]}
         >
-            <Heading fontSize={"3xl"} color={"brand.500"}> Quadro de Aulas </Heading>
+            <Heading fontSize={"5xl"} color={"brand.500"} marginTop={"1em"} > Quadro de Aulas </Heading>
             <Box
                 display={"flex"}
                 flexDirection={["column", "column", "row"]}

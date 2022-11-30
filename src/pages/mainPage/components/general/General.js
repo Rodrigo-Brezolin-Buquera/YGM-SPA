@@ -16,7 +16,7 @@ export const General = () => {
             alignItems="center"
             paddingTop={"2em"} gap="1em"
         >
-            <Heading margin={"1em"} color={"brand.500"}>Yoga Mangala</Heading>
+            <Heading margin={"0.5em"} color={"brand.500"} fontSize={"5xl"} >Yoga Mangala</Heading>
             <Text textAlign="center" color={"brand.500"} fontSize={"2xl"} padding="1em" margin={"1em"}>
                 {subtitle}
             </Text>

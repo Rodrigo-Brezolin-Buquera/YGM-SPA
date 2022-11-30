@@ -13,7 +13,7 @@ export const Teachers = () => {
             padding={"2em"}
             alignItems={"center"}
         >
-            <Heading fontSize={"4xl"} color="brand.400"> Nossos professores </Heading>
+            <Heading fontSize={"5xl"} color="brand.400"> Nossos professores </Heading>
             {teachersInformations.map(teacher => (
                 <TeacherCard
                     image={teacher.image}

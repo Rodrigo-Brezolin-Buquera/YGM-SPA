@@ -22,7 +22,7 @@ export const PlanValues = () => {
     fontSize={"1xl"}
     
     >
-        <Heading fontSize={"3xl"} color={"brand.500"}>Valores planos</Heading>
+        <Heading fontSize={"5xl"} color={"brand.500"} marginTop={"0.5em"}>Valores planos</Heading>
         <Table variant='simple' >
             <Thead
             >
