@@ -1,6 +1,6 @@
 import { fridayClasses, mondayClasses, saturdayClasses, thursdayClasses, tuesdayClasses, wednesdayClasses } from "../../../../constants/texts/agendaInformation"
 import { DayCard } from "./components/DayCard/DayCard"
-import { Box, Heading, Image, Divider } from "@chakra-ui/react"
+import { Box, Heading, Image } from "@chakra-ui/react"
 import Whatsapp from "../../../../assets/socialMedia/Whatsapp.png"
 import ReactWhatsapp from 'react-whatsapp';
 import { reactWhatapp, whatsappMessage } from "../../../../constants/texts/contactInformation";

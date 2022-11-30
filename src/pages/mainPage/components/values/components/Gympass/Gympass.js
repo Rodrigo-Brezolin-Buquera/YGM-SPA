@@ -10,7 +10,7 @@ export const Gympass = () => {
             alignItems="center"
             gap={"1em"}
         >
-            <Heading fontSize={"initial"} textAlign="center" color={"brand.500"}>
+            <Heading fontSize={"2xl"} textAlign="center" color={"brand.500"}>
                 Aceitamos Gympass
             </Heading>
             <Text color={"brand.500"} textAlign="center">
