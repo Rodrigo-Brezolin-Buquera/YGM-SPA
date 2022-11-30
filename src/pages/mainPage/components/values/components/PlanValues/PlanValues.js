@@ -1,52 +1,43 @@
-import {
-    Table,
-    Thead,
-    Tbody,
-    Tfoot,
-    Tr,
-    Th,
-    Td,
-    TableCaption,
-    TableContainer,
-    Heading,
-} from '@chakra-ui/react'
+import { Box, Heading} from '@chakra-ui/react'
 import { Monthy1x, Monthy2x, Quarterly1x, Quarterly2x, Semester1x, Semester2x } from '../../../../../../constants/texts/valuesInformation'
 
 export const PlanValues = () => {
-    return <TableContainer
-     minWidth="80%" 
-    display={"flex"} 
-    flexDirection={"column"}
-    alignItems={"center"} 
-    gap="1em"
-    fontSize={"1xl"}
-    
-    >
-        <Heading fontSize={"5xl"} color={"brand.500"} marginTop={"0.5em"}>Valores planos</Heading>
-        <Table variant='simple' >
-            <Thead
+    return (
+        <Box
+            minWidth="80%"
+            display={"flex"}
+            flexDirection={"column"}
+            alignItems={"center"}
+            gap="1em"
+            fontSize={"1xl"}
+            w={["100%", "90%", "80%"]}
+        >
+            <Heading fontSize={"5xl"} color={"brand.500"} marginTop={"1em"}>Valores planos</Heading>
+            <Box
+                display={"flex"}
+                flexDirection={"column"}
+                alignItems={"center"}
+                w={"100%"}
             >
-                <Tr backgroundColor={"teal.100"}>
-                    <Th textAlign="center" fontSize={"1xl"}>Planos</Th>
-                    <Th textAlign="center" fontSize={"1xl"} >Mensal</Th>
-                    <Th textAlign="center" fontSize={"1xl"} >Trimestral</Th>
-                    <Th textAlign="center" fontSize={"1xl"}  >Semestral</Th>
-                </Tr>
-            </Thead>
-            <Tbody>
-                <Tr>
-                    <Td textAlign="center" fontSize={"1xl"} >1x na semana</Td>
-                    <Td textAlign="center" >{Monthy1x}</Td>
-                    <Td textAlign="center" >{Quarterly1x}</Td>
-                    <Td textAlign="center" >{Semester1x}</Td>
-                </Tr>
-                <Tr>
-                    <Td textAlign="center" fontSize={"1xl"} >2x na semana</Td>
-                    <Td textAlign="center" >{Monthy2x}</Td>
-                    <Td textAlign="center" >{Quarterly2x}</Td>
-                    <Td textAlign="center" >{Semester2x}</Td>
-                </Tr>
-            </Tbody>
-        </Table>
-    </TableContainer>
+                <Box display={"flex"} backgroundColor={"teal.100"} justifyContent={"space-evenly"} w={"100%"}>
+                    <Box textAlign="center" marginY={"0.5em"} fontSize={"1xl"} w={"23%"}>Planos</Box>
+                    <Box textAlign="center" marginY={"0.5em"} fontSize={"1xl"} w={"23%"}>Mensal</Box>
+                    <Box textAlign="center" marginY={"0.5em"} fontSize={"1xl"} w={"23%"}>Trimestral</Box>
+                    <Box textAlign="center" marginY={"0.5em"} fontSize={"1xl"}  w={"23%"}>Semestral</Box>
+                </Box>
+                <Box display={"flex"} justifyContent={"space-evenly"} w={"100%"}>
+                    <Box textAlign="center" marginY={"0.5em"} w={"23%"}>1x na semana</Box>
+                    <Box textAlign="center" marginY={"0.5em"} w={"23%"}>{Monthy1x}</Box>
+                    <Box textAlign="center" marginY={"0.5em"} w={"23%"}>{Quarterly1x}</Box>
+                    <Box textAlign="center" marginY={"0.5em"} w={"23%"}>{Semester1x}</Box>
+                </Box>
+                <Box display={"flex"}justifyContent={"space-evenly"} w={"100%"} >
+                    <Box textAlign="center" marginY={"0.5em"} w={"23%"}>2x na semana</Box>
+                    <Box textAlign="center" marginY={"0.5em"} w={"23%"}>{Monthy2x}</Box>
+                    <Box textAlign="center" marginY={"0.5em"} w={"23%"}>{Quarterly2x}</Box>
+                    <Box textAlign="center" marginY={"0.5em"} w={"23%"}>{Semester2x}</Box>
+                </Box>
+            </Box>
+        </Box>
+    )
 }
