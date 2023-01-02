@@ -1,6 +1,6 @@
 import { Card,  CardBody, Image, Stack, Heading, Text } from '@chakra-ui/react'
 
-export const TeacherCard = ({image, description, name}) => {
+export const InvertedTeacherCard = ({image, description, name}) => {
   return(
 
     <Card
@@ -11,6 +11,15 @@ export const TeacherCard = ({image, description, name}) => {
     w={"100%"}
     align="center"
 >
+    
+    <Stack>
+        <CardBody>
+            <Heading color={"brand.400"} size='lg' textAlign={["center", "end"]}>{name}</Heading>
+            <Text py='2' color={"brand.400"} textAlign={["center", "end"]}>
+                {description}
+            </Text>
+        </CardBody>
+    </Stack>
     <Image
         objectFit='cover'
         borderRadius='full'
@@ -18,14 +27,6 @@ export const TeacherCard = ({image, description, name}) => {
         src={image}
         alt={`${name} - Foto perfil`}
     />
-    <Stack>
-        <CardBody>
-            <Heading color={"brand.400"} size='lg' textAlign={["center", "initial"]}>{name}</Heading>
-            <Text py='2' color={"brand.400"} textAlign={["center", "initial"]}>
-                {description}
-            </Text>
-        </CardBody>
-    </Stack>
 </Card>
   )
 }

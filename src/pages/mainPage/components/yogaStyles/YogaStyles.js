@@ -23,7 +23,7 @@ export const YogaStyles = () => {
             paddingTop={"2em"}
             paddingBottom={"3em"}
         >
-            <Heading color={"brand.500"} fontSize={"5xl"}  > Atividades</Heading>
+            <Heading color={"brand.400"} fontSize={"5xl"}  > Atividades</Heading>
             <Box
                 w={"100%"}
                 display={"flex"}
