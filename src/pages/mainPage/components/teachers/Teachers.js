@@ -17,6 +17,7 @@ export const Teachers = () => {
             <Heading fontSize={"5xl"} color="brand.400" textAlign={"center"}> Nossos professores </Heading>
             {teachersInformations.map(teacher => (
                 <TeacherCard
+                    key={teacher.name}
                     image={teacher.image}
                     name={teacher.name}
                     description={teacher.description}

@@ -18,7 +18,7 @@ export const Values = () => {
       <PlanValues />
       <Box
         display={"flex"}
-        gap={["1em","5em","10em"]}
+        gap={["1em", "5em", "10em"]}
       >
         <Gympass />
         <Personal />

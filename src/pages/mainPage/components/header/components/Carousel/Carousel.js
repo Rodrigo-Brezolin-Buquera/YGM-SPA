@@ -14,9 +14,10 @@ export default () => (
   <Carousel autoPlay showThumbs={false}>
 
     {photoList.map(photo => (
-      <div>
+      <div key={photo}>
         <Image
-           alt="Carrossel de fotos" src={photo} />
+
+          alt="Carrossel de fotos" src={photo} />
       </div>
     ))}
 

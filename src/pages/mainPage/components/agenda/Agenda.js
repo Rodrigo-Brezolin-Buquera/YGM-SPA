@@ -15,7 +15,7 @@ export const Agenda = () => {
             gap="1em"
             paddingTop={"1em"}
             minHeight="30em"
-            h={["70em","70em", "30em"]}
+            h={["70em", "70em", "30em"]}
         >
             <Heading fontSize={"5xl"} color={"brand.500"} marginTop={"1em"} > Quadro de Aulas </Heading>
             <Box
@@ -29,16 +29,16 @@ export const Agenda = () => {
                 flexGrow={"2"}
             >
                 {mondayClasses?.length ? <DayCard day={"Segunda"} classes={mondayClasses} /> : null}
-              
-               {tuesdayClasses?.length ?  <DayCard day={"Terça"} classes={tuesdayClasses} /> : null}
-              
-               {wednesdayClasses?.length ?  <DayCard day={"Quarta"} classes={wednesdayClasses} /> : null}
-                
-               {thursdayClasses?.length ?  <DayCard day={"Quinta"} classes={thursdayClasses} /> : null}
-                
-               {fridayClasses?.length ?  <DayCard day={"Sexta"} classes={fridayClasses} /> : null}
-                
-               {saturdayClasses?.length ?  <DayCard day={"Sábado"} classes={saturdayClasses} /> : null}
+
+                {tuesdayClasses?.length ? <DayCard day={"Terça"} classes={tuesdayClasses} /> : null}
+
+                {wednesdayClasses?.length ? <DayCard day={"Quarta"} classes={wednesdayClasses} /> : null}
+
+                {thursdayClasses?.length ? <DayCard day={"Quinta"} classes={thursdayClasses} /> : null}
+
+                {fridayClasses?.length ? <DayCard day={"Sexta"} classes={fridayClasses} /> : null}
+
+                {saturdayClasses?.length ? <DayCard day={"Sábado"} classes={saturdayClasses} /> : null}
             </Box>
 
             <Box
