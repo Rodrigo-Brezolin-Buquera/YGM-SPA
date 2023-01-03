@@ -1,12 +1,12 @@
 export const stylesInfomation = [
     { 
         title: "Hatha Yoga",
-        text: "Prática tradicional envolve maior permanência nas posturas, buscando o aquentamento mental e físico, que resultando no aumento de força, equilíbrio e alongamento",
+        text: "Prática tradicional envolve maior permanência nas posturas, buscando o aquietamento mental e físico, que resultando no aumento de força, equilíbrio e alongamento",
         image: require("../../assets/photos/Canva7.png") 
     },
     { 
         title: "Vinyasa Flow",
-        text: "As salas são fluídas, vigorosas e dinâmicas, a prática busca sincronizar movimento com respiração com menos permanência nas posturas. oca na coordenação, alongamento, força e concentração. As posturas se conectam de forma inteligente e espontânea criando uma experiência e purificante conhecida como Flow (Fluxo natural).",
+        text: "As salas são fluídas, vigorosas e dinâmicas, a prática busca sincronizar movimento com respiração com menos permanência nas posturas. Foca na coordenação, alongamento, força e concentração. As posturas se conectam de forma inteligente e espontânea criando uma experiência e purificante conhecida como Flow (Fluxo natural).",
         image: require("../../assets/photos/Canva8.png")   
     }, 
     { 
@@ -23,8 +23,7 @@ export const stylesInfomation = [
         title: "Yoga para Gestantes",
         text: "O Yoga para Gestantes compõe uma prática de posturas e técnicas de respiração criadas especificamente para facilitar o processo de gestação, aliviar os desconfortos da gravidez e preparar o corpo para o parto; de maneira que a gestante possa vivenciar essa fase tão especial com serenidade e leveza.",
         image: require("../../assets/photos/Canva4.png")   
-    },
-   
+    },   
     { 
         title: "Aulas Particulares",
         text: "A aula é personalizada, idealizada e direcionada para o aluno conforme suas necessidades e intenções. O aluno pode agendar sua prática conforme sua disponibilidade, com dias e horários flexíveis.",

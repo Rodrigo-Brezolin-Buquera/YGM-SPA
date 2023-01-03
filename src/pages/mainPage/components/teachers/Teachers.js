@@ -22,8 +22,6 @@ export const Teachers = () => {
                     description={teacher.description}
                 />
             ))}
-
-
         </Box>
     )
 }
