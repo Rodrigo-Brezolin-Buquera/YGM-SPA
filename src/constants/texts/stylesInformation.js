@@ -28,5 +28,10 @@ export const stylesInfomation = [
         title: "Aulas Particulares",
         text: "A aula é personalizada, idealizada e direcionada para o aluno conforme suas necessidades e intenções. O aluno pode agendar sua prática conforme sua disponibilidade, com dias e horários flexíveis.",
         image: require("../../assets/photos/Canva3.png")   
+    },
+    { 
+        title: "Yoga Massagem Ayurvédica",
+        // text: "A aula é personalizada, idealizada e direcionada para o aluno conforme suas necessidades e intenções. O aluno pode agendar sua prática conforme sua disponibilidade, com dias e horários flexíveis.",
+         image: require("../../assets/photos/Canva9.png")   
     }
 ]
