@@ -31,7 +31,7 @@ export const stylesInfomation = [
     },
     { 
         title: "Yoga Massagem Ayurvédica",
-        // text: "A aula é personalizada, idealizada e direcionada para o aluno conforme suas necessidades e intenções. O aluno pode agendar sua prática conforme sua disponibilidade, com dias e horários flexíveis.",
-         image: require("../../assets/photos/Canva7.png")   
+        text: "A Yoga Massagem Ayurvédica é aplicável para pessoas de qualquer idade. A massagem estimula a circulação sanguínea e linfática; o relaxamento e a desintoxicação do organismo. A aplicação é realizada no chão e feita através das mão e dos pés; aplicando pó esfoliante a base de ervas e óleo vegetal prensado a frio.",
+        image: require("../../assets/photos/Canva7.png")   
     }
 ]
