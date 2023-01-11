@@ -3,7 +3,7 @@ import { heading1, heading2, heading3, subtitle, text1, text2, text3 } from '../
 import { InformationCard } from './components/InfomationCard'
 import { AiFillHeart } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { GiWeightLiftingUp } from "react-icons/gi";
+import { GiStrong } from "react-icons/gi";
 
 
 export const General = () => {
@@ -34,7 +34,7 @@ export const General = () => {
                 <InformationCard
                     title={heading2}
                     text={text2}
-                    Icon={<GiWeightLiftingUp size={"60px"} />}
+                    Icon={<GiStrong size={"60px"} />}
                     color={"gold"}
                 />
                 <InformationCard
