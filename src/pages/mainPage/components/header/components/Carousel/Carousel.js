@@ -11,7 +11,7 @@ const photoList = [
 ]
 
 export default () => (
-  <Carousel autoPlay showThumbs={false}>
+  <Carousel autoPlay showThumbs={false} infiniteLoop={true}>
 
     {photoList.map(photo => (
       <div key={photo}>
